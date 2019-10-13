@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.myapplication.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/income"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:hint="800000"
+        android:id="@+id/income"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infra_investment"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:hint="9000"
+        android:id="@+id/infraInvestment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="8dp"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/investment"
+        android:textSize="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:hint="9000"
+        android:id="@+id/investments"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="8dp"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/medical_premium"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:hint="9000"
+        android:id="@+id/medicalPremium"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="8dp"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/housing_interest"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:hint="9000"
+        android:id="@+id/housingInterest"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="8dp"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/reset"
+            android:backgroundTint="#4682d7"/>
+
+        <Button
+            android:onClick="onClick"
+            android:text="@string/calculate_tax"
+            android:backgroundTint="#ff4081"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
